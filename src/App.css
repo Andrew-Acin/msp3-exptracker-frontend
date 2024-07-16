@@ -9,4 +9,14 @@
 
 .navbar {
   background-color: #ad20d9;
+  color: white;
+}
+
+.button {
+  background-color: #ad20d9;
+  color: white;
+}
+
+Link {
+  color: white;
 }
