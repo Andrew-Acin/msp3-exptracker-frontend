@@ -3,7 +3,8 @@
 function EditExpense() {
     return (
         <div>
-            <p>more random text for now</p>
+            <br />
+            <p>I wonder if we should just edit expenses from the expense list</p>
         </div>
     )
 }

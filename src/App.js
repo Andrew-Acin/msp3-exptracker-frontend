@@ -25,6 +25,7 @@ function App() {
 function Home() {
   return (
     <div>
+      <br />
       <h1>EXP App</h1>
     </div>
   )

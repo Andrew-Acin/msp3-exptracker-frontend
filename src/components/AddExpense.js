@@ -9,11 +9,11 @@ function AddExpense() {
                 <Form.Label>Add Expense</Form.Label>
                 <Form.Control type="text" placeholder="Expense Name" />
             </Form.Group>
-
             <Form.Group className="mb-3">
                 <Form.Label>Amout</Form.Label>
                 <Form.Control type="number" placeholder="Amout" />
             </Form.Group>
+            {/* I have included some examples of what some expenses might be */}
             <Form.Select aria-label="Default select example">
                 <option>Select Expense type</option>
                 <option value="1">Morgage/Rent</option>
