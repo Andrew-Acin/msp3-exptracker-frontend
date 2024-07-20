@@ -5,6 +5,7 @@ import AddExpense from './components/AddExpense';
 import EditExpense from './components/EditExpense';
 import ExpenseList from './components/ExpenseList';
 import Navbar from './components/Expbar';
+import Home from './components/Home';
 
 function App() {
   return (
@@ -22,13 +23,6 @@ function App() {
   );
 }
 
-function Home() {
-  return (
-    <div>
-      <br />
-      <h1>EXP App</h1>
-    </div>
-  )
-}
+
 
 export default App;

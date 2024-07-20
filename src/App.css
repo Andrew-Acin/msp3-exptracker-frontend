@@ -12,6 +12,10 @@
   color: white;
 }
 
+#navbarNavAltMarkup {
+  color: white;
+}
+
 .button {
   background-color: #ad20d9;
   color: white;
@@ -19,4 +23,11 @@
 
 Link {
   color: white;
+}
+
+.Headers {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ad20d9;
 }
