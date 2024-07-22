@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 function ExpenseList() {
   const [expenses, setExpenses] = useState([]);
@@ -16,11 +18,16 @@ function ExpenseList() {
 
   return (
     <div>
-      <h2>Expense List</h2>
+      <h2 className='small-header'>Expense List</h2>
       <ul>
         {expenses.map(expense => (
           <li key={expense.id}>
-            {expense.expense}: ${expense.amount} ({expense.type})
+            {expense.expense}: ${expense.amount} ({expense.type})  
+             <Link to={`/EditExpense/${expense.id}`}>
+                            <Button variant="warning" size="sm" className="ms-2 button">
+                                Edit
+                            </Button>
+                        </Link>
           </li>
         ))}
       </ul>

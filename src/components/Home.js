@@ -16,8 +16,8 @@ function Home() {
       <br />
       <h1 className='Headers'>EXP</h1>
       {balance ? (
-        <div>
-          <h2>Account Balance</h2>
+        <div className='Balance'>
+          <h2>Bank Account Balance</h2>
           <p>Account Number: {balance.accountNumber}</p>
           <p>Balance: ${balance.balance.toFixed(2)}</p>
           <p>Currency: {balance.currency}</p>

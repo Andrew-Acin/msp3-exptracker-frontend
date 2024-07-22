@@ -1,4 +1,5 @@
 .App {
+  /* background: linear-gradient(to bottom right, rgb(139, 6, 139), rgb(207, 100, 100)); */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -8,26 +9,57 @@
 
 
 .navbar {
-  background-color: #ad20d9;
+  background: linear-gradient(to bottom right, rgb(192, 26, 192), rgb(207, 100, 100));
   color: white;
+  border-radius: 10px;
 }
 
-#navbarNavAltMarkup {
-  color: white;
+.navbar-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .button {
-  background-color: #ad20d9;
+  background: linear-gradient(to bottom right, rgb(192, 26, 192), rgb(207, 100, 100));
   color: white;
+  border: none;
 }
 
 Link {
-  color: white;
+  color: white;  margin: 5px;
 }
 
 .Headers {
   font-family: "Abril Fatface", serif;
   font-weight: 400;
   font-style: normal;
-  color: #ad20d9;
+  background-image: linear-gradient(to right, rgb(192, 26, 192), rgb(207, 100, 100));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 48px;
+}
+
+.small-header {
+    font-family: "Abril Fatface", serif;
+    background-image: linear-gradient(to right, rgb(192, 26, 192), rgb(207, 100, 100));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 32px;
+}
+
+.edit-button {
+  background: linear-gradient(to bottom right, rgb(192, 26, 192), rgb(207, 100, 100));
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.Balance {
+  background: linear-gradient(to bottom right, rgb(192, 26, 192), rgb(207, 100, 100));
+  color: white;
+  border-radius: 20px;
 }

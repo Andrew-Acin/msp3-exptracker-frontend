@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
+import { useNavigate } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 
 function AddExpense() {
     const [expenseName, setExpenseName] = useState('');
     const [amount, setAmount] = useState('');
     const [expenseType, setExpenseType] = useState('');
+    const navigate = useNavigate();
+    
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -28,10 +31,11 @@ function AddExpense() {
         })
         .then(response => response.json())
         .then(data => {
-            console.log('Success:', data);
-            setExpenseName('');
-            setAmount('');
+            console.log('Success:', data)
+            setExpenseName('')
+            setAmount('')
             setExpenseType('');
+            navigate('/ExpenseList')
         })
         .catch((error) => {
             console.error('Error:', error);

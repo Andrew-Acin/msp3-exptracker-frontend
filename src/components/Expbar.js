@@ -7,10 +7,10 @@ function Navbar() {
             <div className="container-fluid">
                 <div className="navbar" id="navbarNavAltMarkup">
                     <div className="navbar-nav">
-                        <Link className="nav-link" to="/">Home</Link>
-                        <Link className="nav-link" to="./ExpenseList">ExpenseList</Link>
-                        <Link className="nav-link" to="./AddExpense">AddExpense</Link>
-                        <Link className="nav-link" to="./EditExpense">EditExpense</Link>                        
+                        <Link className="nav-link text-white" to="/">Home</Link>
+                        <Link className="nav-link text-white" to="./ExpenseList">ExpenseList</Link>
+                        <Link className="nav-link text-white" to="./AddExpense">AddExpense</Link>
+                        {/* <Link className="nav-link text-white" to="./EditExpense">EditExpense</Link> */}
                     </div>
                 </div>
             </div>
