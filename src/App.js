@@ -6,20 +6,23 @@ import EditExpense from './components/EditExpense';
 import ExpenseList from './components/ExpenseList';
 import Navbar from './components/Expbar';
 import Home from './components/Home';
+import { ExpenseProvider } from './components/ExpenseContext';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/ExpenseList" element={<ExpenseList />} />
-          <Route path="/AddExpense" element={<AddExpense />} />
-          <Route path="/EditExpense/:id" element={<EditExpense />} />
-        </Routes>
-      </div>
-    </Router>
+    <ExpenseProvider>
+      <Router>
+        <div className="App">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />}/>
+            <Route path="/ExpenseList" element={<ExpenseList />} />
+            <Route path="/AddExpense" element={<AddExpense />} />
+            <Route path="/EditExpense/:id" element={<EditExpense />} />
+          </Routes>
+        </div>
+      </Router>
+    </ExpenseProvider>
   );
 }
 

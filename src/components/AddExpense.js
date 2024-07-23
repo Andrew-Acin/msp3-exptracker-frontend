@@ -15,14 +15,12 @@ function AddExpense() {
         event.preventDefault();
 
 
-        // Create an expense object
         const newExpense = {
             expense: expenseName,
             amount: parseFloat(amount),
             type: expenseType
         };
 
-        // Send the expense object to the backend API
         fetch('http://localhost:3001/expenses', {
             method: 'POST',
             headers: {
