@@ -20,6 +20,7 @@ function EditExpense() {
             .catch(error => console.error("There was an error fetching the expense!", error));
     }, [id]);
 
+    // this handels the submit button
     const handleSubmit = (event) => {
         event.preventDefault();
         fetch(`http://localhost:3001/expenses/${id}`, {
@@ -45,6 +46,7 @@ function EditExpense() {
         }));
     };
 
+    // this handels the delete button 
     const handleDelete = (id) => {
         fetch(`http://localhost:3001/expenses/${id}`, {
             method: 'DELETE'

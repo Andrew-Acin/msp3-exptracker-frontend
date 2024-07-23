@@ -7,6 +7,7 @@ const Graph = () => {
   const chartRef = useRef(null);
   const chartInstanceRef = useRef(null);
 
+//   I would have loved to separate the chart with the types instead of amount but i just don't think we have time for that.
   useEffect(() => {
     if (expenses.length > 0) {
       const labels = expenses.map(expense => expense.expense);
