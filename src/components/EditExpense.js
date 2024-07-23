@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import Logo from './Logo';
 
 function EditExpense() {
     const { id } = useParams();
@@ -103,6 +104,8 @@ function EditExpense() {
             <Button className='button' onClick={() => handleDelete(expense.id)}>
                 Delete
             </Button>
+            <br />
+            <Logo />
         </Form>
     );
 }

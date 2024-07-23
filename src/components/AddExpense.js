@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import { useNavigate } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
+import Logo from './Logo';
 
 function AddExpense() {
     const [expenseName, setExpenseName] = useState('');
@@ -81,7 +82,10 @@ function AddExpense() {
             <Button className='button' type="submit">
                 Submit
             </Button>
+            <br/>
+            <Logo />
         </Form>
+        
     );
 }
 

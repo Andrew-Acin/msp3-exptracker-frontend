@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
+import Logo from './Logo';
 
 function ExpenseList() {
   const [expenses, setExpenses] = useState([]);
@@ -31,6 +32,8 @@ function ExpenseList() {
           </li>
         ))}
       </ul>
+            <br />
+            <Logo />
     </div>
   );
 }
