@@ -7,7 +7,7 @@ function Home() {
   const [balance, setBalance] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:3001/balance')
+   fetch(`${process.env.REACT_APP_BACKEND_API}/balance`)
       .then(response => response.json())
       .then(data => setBalance(data))
       .catch(error => console.error('Error fetching balance:', error));

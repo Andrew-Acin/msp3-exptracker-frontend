@@ -14,7 +14,7 @@ function EditExpense() {
     });
 
     useEffect(() => {
-        fetch(`http://localhost:3001/expenses/${id}`)
+        fetch(`${process.env.REACT_APP_BACKEND_API}/expenses/${id}`)
             .then(response => response.json())
             .then(data => setExpense(data))
             .catch(error => console.error("There was an error fetching the expense!", error));
@@ -23,7 +23,7 @@ function EditExpense() {
     // this handels the submit button
     const handleSubmit = (event) => {
         event.preventDefault();
-        fetch(`http://localhost:3001/expenses/${id}`, {
+        fetch(`${process.env.REACT_APP_BACKEND_API }/expenses/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

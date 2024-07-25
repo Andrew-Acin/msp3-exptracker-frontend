@@ -11,10 +11,9 @@ const EmailForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+// i think this fetch:route below might need to be changed 
     try {
-    //   const response = await fetch(`${process.env.REACT_APP_BACKEND_API }/email`, {
-    const response = await fetch('http://localhost:3001/api/send', {
+      const response = await fetch(`${process.env.REACT_APP_BACKEND_API}/email`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

@@ -21,7 +21,7 @@ function AddExpense() {
             type: expenseType
         };
 
-        fetch('http://localhost:3001/expenses', {
+       fetch(`${process.env.REACT_APP_BACKEND_API}/expenses`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
