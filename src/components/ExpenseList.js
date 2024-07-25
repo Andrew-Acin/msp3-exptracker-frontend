@@ -7,7 +7,7 @@ function ExpenseList() {
   const [expenses, setExpenses] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/expenses')
+    fetch(`${process.env.REACT_APP_BACKEND_API }/expenses`)
       .then(response => response.json())
       .then(data => {
         setExpenses(data);

@@ -6,6 +6,7 @@ import EditExpense from './components/EditExpense';
 import ExpenseList from './components/ExpenseList';
 import Navbar from './components/Expbar';
 import Home from './components/Home';
+import EmailForm from './components/AddEmail';
 import { ExpenseProvider } from './components/ExpenseContext';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route path="/ExpenseList" element={<ExpenseList />} />
             <Route path="/AddExpense" element={<AddExpense />} />
             <Route path="/EditExpense/:id" element={<EditExpense />} />
+            <Route path="/AddEmail" element={<EmailForm />} />
           </Routes>
         </div>
       </Router>

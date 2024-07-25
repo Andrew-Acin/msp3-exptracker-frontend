@@ -12,6 +12,7 @@ function Navbar() {
                         <Link className="nav-link text-white" to="/">Home</Link>
                         <Link className="nav-link text-white" to="./ExpenseList">ExpenseList</Link>
                         <Link className="nav-link text-white" to="./AddExpense">AddExpense</Link>
+                        <Link className="nav-link text-white" to="./AddEmail" >AddEmail</Link>
                         {/* <Link className="nav-link text-white" to="./EditExpense">EditExpense</Link> */}
                     </div>
                 </div>
